@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>UAT Online</title>
 
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/nomalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
-    <main>
-        <section>
-        <h2>Iniciar Sesión</h2>
+    <!-- Menú de Navegación -->
+    <header>
+        <div class="nav-bg">
 
-        <form>
-            <fieldset>
-                <legend>Llena los datos</legend>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="img/logo/LogoPrincipalTexto(fondo blanco).png" alt="Logo de la empresa">
+                <p>UAT Online</p>
+            </div>
 
-                <div>
-                    <label>Usuario</label>
-                    <input type="text" placeholder="Tu Usuario">
-                </div>
+            <nav class="nav-principal">
+                <a href="#">Inicio</a>
+                <a href="#">Inciar Sesión</a>
+            </nav>
 
-                <div>
-                    <label>Correo</label>
-                    <input type="email" placeholder="Mail">
-                </div>
+        </div>
+    </header>
 
-                <div>
-                    <label>Contraseña</label>
-                    <input type="text" placeholder="Tu Contraseña">
-                </div>
-
-                <input type="submit" value="Enviar">
-                <!-- <button type="submit">Enviar</button>-->
-
-            </fieldset>
-        </form>
+    <!-- Heading -->
+    <section class="uni">
+        <section class="contenido-uni">
+            <div class="ubicacion">
+                <h2>Bienvenido a UAT Online</h2>
+                <p>Plataforma de publicación digital de la Universidad Autónoma de Tecnologías</p>
+            </div> 
+        </section>
     </section>
+    <main>
+        
     </main>
 </body>
 </html>
