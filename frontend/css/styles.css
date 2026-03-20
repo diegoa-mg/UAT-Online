@@ -38,6 +38,8 @@ body {
 
 @media (min-width: 768px) {
     .nav-bg {
+        align-items: center;
+        position: relative;
         flex-direction: row;
         align-items: center;
     }
@@ -105,6 +107,9 @@ body {
         align-items: center;
         margin-left: 1.5rem;
         margin-right: 1.5rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
