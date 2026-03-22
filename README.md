@@ -1,38 +1,35 @@
 # UAT Online 🎓
-**Plataforma de difusión digital académica alineada con el ODS 4.**
+Plataforma de difusión digital académica alineada con el ODS 4.
 
 ## 📝 Descripción
-[cite_start]**UAT Online** es una plataforma web desarrollada para la **Universidad Autónoma de Tecnologías (UAT)**[cite: 15, 52]. [cite_start]El proyecto centraliza noticias educativas, recursos académicos y convocatorias de becas en un solo lugar, combatiendo la fragmentación de la información[cite: 58, 78].
+**UAT Online** es una plataforma web desarrollada para la **Universidad Autónoma de Tecnologías (UAT)**. El proyecto centraliza noticias educativas, recursos académicos y convocatorias de becas en un solo lugar, combatiendo la fragmentación de la información.
 
-[cite_start]Este sistema está diseñado bajo los principios del **Objetivo de Desarrollo Sostenible 4 (Educación de Calidad)** de la ONU, buscando reducir la brecha informativa en la comunidad estudiantil y docente[cite: 28, 52].
+Este sistema está diseñado bajo los principios del **Objetivo de Desarrollo Sostenible 4 (Educación de Calidad)** de la ONU, buscando reducir la brecha informativa en la comunidad estudiantil y docente.
 
 ---
 
 ## 🛠️ Tecnologías Utilizadas
 | Tecnología | Uso |
 | :--- | :--- |
-| **HTML5 / CSS3** | [cite_start]Estructura y estilos globales (Flexbox/Grid)[cite: 76]. |
-| **JavaScript** | Interactividad y lógica del lado del cliente. |
+| **HTML5 / CSS3** | Estructura y estilos globales (Flexbox/Grid). |
+| **JavaScript** | Interactividad y validaciones del lado del cliente. |
 | **PHP** | Procesamiento del lado del servidor y manejo de datos. |
 | **Tailwind CSS** | Estilizado rápido y responsivo en módulos de usuario. |
-| **Flowbite** | Componentes interactivos para la sección de recursos. |
-| **Figma** | [cite_start]Diseño de prototipos e interfaces UI/UX[cite: 74, 84]. |
-| **GitHub** | [cite_start]Control de versiones y trabajo colaborativo[cite: 74]. |
+| **Figma** | Diseño de prototipos e interfaces UI/UX. |
+| **GitHub** | Control de versiones y trabajo colaborativo. |
 
 ---
 
 ## 👥 Equipo de Desarrollo (Ingeniería de Software 2E)
-* [cite_start]**Alpizar Orozco Miguel Ángel** [cite: 22]
-* [cite_start]**Carmona Medina Ernesto** [cite: 22]
-* [cite_start]**Espitia Cárdenas Francisco Jared** [cite: 22]
-* [cite_start]**Morales Gutiérrez Diego Alejandro** [cite: 22]
-* [cite_start]**Ramírez Vázquez Luis Fernando** [cite: 22]
+* **Alpizar Orozco Miguel Ángel**
+* **Carmona Medina Ernesto**
+* **Espitia Cárdenas Francisco Jared**
+* **Morales Gutiérrez Diego Alejandro**
+* **Ramírez Vázquez Luis Fernando**
 
 ---
 
 ## 💻 Instalación Local
-Para ejecutar este proyecto en tu entorno local:
-
-1. Clona el repositorio:
-   ```bash
-   git clone [https://github.com/tu-usuario/uat-online.git](https://github.com/tu-usuario/uat-online.git)
+1. Clona el repositorio: `git clone https://github.com/tu-usuario/uat-online.git`
+2. Sube los archivos a un servidor local (como XAMPP) para ejecutar PHP.
+3. Abre `index.html` en tu navegador.
