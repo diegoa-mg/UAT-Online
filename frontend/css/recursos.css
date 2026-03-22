@@ -1,37 +1,15 @@
 /* Importación de variables de styles.css para mantener consistencia */
 :root {
-    --blanco: #ffffff;
-    --gris-claro: #e9e9f1;
-    --negro: #000000;
-    --azul-logo: #001430;
     --gris-suave: #e5e7eb;
     --texto-oscuro: #111827;
     --texto-gris: #6b7280;
-    --fuente-principal: 'Inter', sans-serif;
     --azul-primario: #1d4ed8; 
 }
 
-/* Globales */
-html {
-    font-size: 62.5%;
-}
-
 body {
-    font-size: 16px;
-    background-color: var(--gris-claro); /* Usando el gris del index */
-    font-family: var(--fuente-principal);
     color: var(--texto-oscuro);
-    margin: 0;
     -webkit-font-smoothing: antialiased;
 }
-
-/* Clase especial para el botón cuenta para que mantenga el icono alineado
-.btn-cuenta {
-    display: flex !important;
-    align-items: center;
-    gap: 0.5rem;
-}
-*/
 
 /* --- CONTENIDO DE RECURSOS (SE MANTIENE IGUAL) --- */
 
