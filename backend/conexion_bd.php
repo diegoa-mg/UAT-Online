@@ -10,9 +10,15 @@ $usuario = $_POST['usuario'];
 $correo = $_POST['correo'];
 $password = $_POST['password'];
 
-// IMPORTANTE: He ajustado los nombres de las columnas para que coincidan con tu tabla
-// 'usuarios' (plural) y 'correo' (como aparece en tu phpMyAdmin)
-$sql = "INSERT INTO usuarios (usuarios, correo, password) VALUES ('$usuario', '$correo', '$password')";
+// 🔐 Encriptar contraseña
+$password_segura = password_hash($password, PASSWORD_DEFAULT);
+
+// 👇 Rol por defecto (1 = usuario)
+$rol_id = 1;
+
+// 👇 Ahora insertamos también el rol
+$sql = "INSERT INTO usuarios (usuarios, correo, password, rol_id) 
+VALUES ('$usuario', '$correo', '$password_segura', '$rol_id')";
 
 if ($conexion->query($sql) === TRUE) {
     echo "<h2>¡Registro exitoso!</h2>";
