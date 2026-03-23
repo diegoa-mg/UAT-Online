@@ -1,13 +1,35 @@
-# UAT Online
-Plataforma web digital enfocada en la educación de calidad  cuyo objetivo es difundir contenidos educativos como artículos, noticias, recursos de aprendizaje y avisos académicos dentro de una institución
+# UAT Online 🎓
+Plataforma de difusión digital académica alineada con el ODS 4.
 
-Idea: Una ap enfocada en las universidades para agilizar la distribución de la información y de materiales didácticos de clases
+## 📝 Descripción
+**UAT Online** es una plataforma web desarrollada para la **Universidad Autónoma de Tecnologías (UAT)**. El proyecto centraliza noticias educativas, recursos académicos y convocatorias de becas en un solo lugar, combatiendo la fragmentación de la información.
 
-El sistema contará con distintos perfiles de usuarios, cada uno con permisos específicos
--Admin(Directora) : Tendrá control total del sistema, gestionando usuarios, roles, categorías y supervisando todo el contenido
+Este sistema está diseñado bajo los principios del **Objetivo de Desarrollo Sostenible 4 (Educación de Calidad)** de la ONU, buscando reducir la brecha informativa en la comunidad estudiantil y docente.
 
--Editor(Encargados de dirección) : Responsable de revisar, aprobar y rechazar los contenidos creados por docentes
+---
 
--Autor(maestros) : Creador y editor de contenidos digitales
+## 🛠️ Tecnologías Utilizadas
+| Tecnología | Uso |
+| :--- | :--- |
+| **HTML5 / CSS3** | Estructura y estilos globales (Flexbox/Grid). |
+| **JavaScript** | Interactividad y validaciones del lado del cliente. |
+| **PHP** | Procesamiento del lado del servidor y manejo de datos. |
+| **Tailwind CSS** | Estilizado rápido y responsivo en módulos de usuario. |
+| **Figma** | Diseño de prototipos e interfaces UI/UX. |
+| **GitHub** | Control de versiones y trabajo colaborativo. |
 
--Visitantes(alumnos): Podrá acceder a todos los contenidos para consultar información académica y recursos educativos
+---
+
+## 👥 Equipo de Desarrollo (Ingeniería de Software 2E)
+* **Alpizar Orozco Miguel Ángel**
+* **Carmona Medina Ernesto**
+* **Espitia Cárdenas Francisco Jared**
+* **Morales Gutiérrez Diego Alejandro**
+* **Ramírez Vázquez Luis Fernando**
+
+---
+
+## 💻 Instalación Local
+1. Clona el repositorio: `git clone https://github.com/tu-usuario/uat-online.git`
+2. Sube los archivos a un servidor local (como XAMPP) para ejecutar PHP.
+3. Abre `index.html` en tu navegador.
