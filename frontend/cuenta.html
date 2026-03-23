@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/png" href="img/logo/LogoPrincipal(fondo negro).png">
-    <title>UAT Online - Inicio</title>
+    <title>UAT Online - Cuenta</title>
 
     <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
@@ -16,7 +16,6 @@
     
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 <body>
     <!-- Menú de Navegación -->
@@ -39,75 +38,45 @@
 
             <nav class="nav-principal">
                 <a href="index.html">Inicio</a>
-                <a href="login.html">Iniciar Sesión</a>
+                <a href="avisos.html">Avisos</a>
+                <a href="recursos.html">Recursos</a>
+                <a href="cuenta.html" class="btn-cuenta-estilo">Cuenta</a>
             </nav>
 
         </div>
     </header>
-    
-    <!-- Heading --> 
-    <section class="uni">
-        <section class="contenido-uni">
-            <div class="ubicacion">
-                <h2>Bienvenido a<br>UAT Online</h2>
-                <p>Plataforma de publicación digital de la<br>Universidad Autónoma de Tecnologías</p>
-            </div> 
-        </section>
-    </section>
-    
-    <!-- Contenido Principal -->
+
     <main>
-        <section class="ultimas-publi">
-
-        </section>
-
-        <section class="material-clases">
-
-        </section>
-
-        <section class="salon-fama">
-
-        </section>
-
+        <div class="logout-container">
+            <button id="btn-cerrar-cuenta" class="btn-salir-estilo">
+                Cerrar Sesión
+            </button>
+        </div>
     </main>
-
 </body>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    const nav = document.querySelector('.nav-principal'); // Seleccionamos tu nav actual
-    const estaLogueado = localStorage.getItem('sesion_activa');
+    const btnCerrar = document.getElementById('btn-cerrar-cuenta');
 
-    if (estaLogueado === 'true') {
-        // Si el usuario ya entró, mostramos todo
-        nav.innerHTML = `
-            <a href="index.html">Inicio</a>
-            <a href="avisos.html">Avisos</a>
-            <a href="recursos.html">Recursos</a>
-            <a href="cuenta.html">Cuenta</a>
-        `;
-
-        // Lógica para el botón de salir
-        document.getElementById('btn-salir').addEventListener('click', (e) => {
+    if (btnCerrar) {
+        btnCerrar.addEventListener('click', (e) => {
             e.preventDefault();
+            
+            // 1. Borramos la sesión del navegador
             localStorage.removeItem('sesion_activa');
-            window.location.reload(); // Recarga para volver al menú de invitado
+            
+            // 2. Redirigimos al inicio
+            window.location.href = 'index.html';
         });
-    } else {
-        // Si es un invitado, solo ve Inicio e Iniciar Sesión
-        nav.innerHTML = `
-            <a href="index.html">Inicio</a>
-            <a href="login.html">Iniciar Sesión</a>
-        `;
+    }
+
+    // OPCIONAL: Si alguien intenta entrar a cuenta.html sin estar logueado, lo regresamos
+    const estaLogueado = localStorage.getItem('sesion_activa');
+    if (estaLogueado !== 'true') {
+        window.location.href = 'login.html';
     }
 });
 </script>
 
-<footer class="footer">
-    <section class="contenido-footer">
-        <h1>UAT Online</h1>
-        <p>Plataforma de difusión digital académica</p>
-    </section>
-    <p class="copy">© 2026 Universidad Autónoma de Tecnologías</p>
-</footer>
 </html>
