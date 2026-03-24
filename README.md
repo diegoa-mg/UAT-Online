@@ -24,6 +24,10 @@ Este sistema está diseñado bajo los principios del **Objetivo de Desarrollo So
 
 ---
 
+## 🖼️ Interfaz
+
+---
+
 ## 🛠️ Tecnologías Utilizadas
 | Tecnología | Uso |
 | :--- | :--- |
