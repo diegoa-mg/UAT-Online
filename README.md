@@ -18,6 +18,7 @@
 
 Este sistema está diseñado bajo los principios del **Objetivo de Desarrollo Sostenible 4 (Educación de Calidad)** de la ONU, buscando reducir la brecha informativa en la comunidad estudiantil y docente.
 
+---
 
 ## 🛠️ Tecnologías Utilizadas
 | Tecnología | Uso |
