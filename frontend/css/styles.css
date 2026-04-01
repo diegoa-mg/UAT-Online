@@ -57,7 +57,7 @@ body {
 }
 
 .logo img {
-    height: 6rem;
+    height: 3.5rem;
     width: auto;
 }
 
@@ -185,7 +185,13 @@ body {
 .contenido-uni h2 {
     font-size: 3.5rem;
     font-weight: 500;
-    margin: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contenido-uni h2 span {
+    font-size: 3rem;
+    margin-top: 0;
 }
 
 @media (min-width: 768px) {
