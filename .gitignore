@@ -12,3 +12,6 @@ Thumbs.db
 # Ignorar logs de error de PHP
 error_log
 php_errors.log
+
+# Configuración local (credenciales)
+backend/config.php
